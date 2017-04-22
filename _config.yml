@@ -14,8 +14,8 @@ url:              https://afterstudy.github.io
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'AfterStudy'
+  url:            
 
 paginate:         5
 
