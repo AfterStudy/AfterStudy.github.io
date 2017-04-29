@@ -7,6 +7,7 @@ title: 함수형 인터페이스
 </a>
 
 ## 함수형 인터페이스란?
+
 * 함수형 프로그래밍을 사용하기 위해 자바에서 추가된 인터페이스
 * 고차원 함수를 자바 방식으로 변형
 
@@ -53,6 +54,7 @@ function() {
 	<tr>	
 </table>
 
+.
 
 ### 하나의 매개변수를 가지는 함수형 인터페이스
 
@@ -84,6 +86,7 @@ function() {
 	<tr>
 </table>
 
+.
 
 ### 두개의 매개변수를 받는 함수형 인터페이스
 
@@ -105,6 +108,8 @@ function() {
 		<td>boolean test(T t, R r)</td>
 	<tr>	
 </table>
+
+.
 
 ## 예제
 
@@ -169,6 +174,7 @@ Predicate 레퍼런스 문서
 	<tr>
 </table>
 
+.
 
 ```java
 Predicate<Integer> p = i -> i < 10;
