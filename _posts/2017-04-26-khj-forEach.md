@@ -1,3 +1,8 @@
+---
+layout: post
+title: forEach
+---
+
 Java8 Iterable 인터페이스에 컬렉션을 반복해서 실행할 수 있는 forEach 메소드가 추가되었다.
 
 ## 구조
