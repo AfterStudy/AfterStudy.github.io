@@ -33,7 +33,6 @@ function() {
 	}
 }
 
-
 ```
 
 ## 함수형 인터페이스
@@ -51,15 +50,14 @@ function() {
 		<td>java.lang.Runnable</td>
 		<td>void run()</td>
 		<td>리턴 값과 매개변수 둘다 없다.</td>
-	<tr>
+	</tr>
 	<tr>
 		<td>Supplier<T></td>
 		<td>T get()</td>
 		<td>리턴 값만 있다.</td>
-	<tr>	
+	</tr>	
 </table>
 
------
 
 ### 하나의 매개변수를 가지는 함수형 인터페이스
 
@@ -74,20 +72,19 @@ function() {
 		<td>Consumer<T></td>
 		<td>void accept(T t)</td>
 		<td>하나의 매개변수만 있다.</td>
-	<tr>
+	</tr>
 	<tr>
 		<td>Function<T,R></td>
 		<td>R apply(T t)</td>
 		<td>하나의 매개변수와 하나의 리턴 값을 가진다.</td>
-	<tr>
+	</tr>
 	<tr>
 		<td>Predicate<T></td>
 		<td>boolean test(T t)</td>
 		<td>하나의 매개변수를 가지고 booean값을 리턴한다</td>
-	<tr>
+	</tr>
 </table>
 
------
 
 ### 두개의 매개변수를 받는 함수형 인터페이스
 
@@ -99,18 +96,16 @@ function() {
 	<tr>
 		<td>BiConsumer<T></td>
 		<td>void accept(T t, R r)</td>
-	<tr>
+	</tr>
 	<tr>
 		<td>BiFunction<T,R,U></td>
 		<td>U apply(T t, R r)</td>
-	<tr>
+	</tr>
 	<tr>
 		<td>BiPredicate<T, R></td>
 		<td>boolean test(T t, R r)</td>
-	<tr>	
+	</tr>	
 </table>
-
------
 
 ## 예제
 
@@ -141,7 +136,7 @@ Supplier<String> s2 = new Supplier<String>() {
 
 String temp = s2.get();
 ```
-
+-----
 
 ## Predicate 인페페이스 활용
 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html">
@@ -154,23 +149,23 @@ Predicate 레퍼런스 문서
 	<tr>
 		<th>메서드</th>
 		<th>설명</th>
-	<tr>
+	</tr>
 	<tr>
 		<td>and(Predicate<? super T> other</td>
 		<td>and 연산</td>
-	<tr>
+	</tr>
 	<tr>
 		<td>or(Predicate<? super T> other)</td>
 		<td>or 연산</td>
-	<tr>
+	</tr>
 	<tr>
 		<td>negate()</td>
 		<td>not 연산</td>
-	<tr>
+	</tr>
 	<tr>
 		<td>isEqual(Object targetRef)</td>
 		<td>같은 값인지 비교</td>
-	<tr>
+	</tr>
 </table>
 
 -----
