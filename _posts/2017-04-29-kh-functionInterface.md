@@ -51,10 +51,15 @@ function() {
 		<td>java.lang.Runnable</td>
 		<td>void run()</td>
 		<td>리턴 값과 매개변수 둘다 없다.</td>
+	<tr>
+	<tr>
+		<td>Supplier<T></td>
+		<td>T get()</td>
+		<td>리턴 값만 있다.</td>
 	<tr>	
 </table>
 
-.
+-----
 
 ### 하나의 매개변수를 가지는 함수형 인터페이스
 
@@ -64,11 +69,7 @@ function() {
 		<th>호출 메서드</th>
 		<th>설명</th>
 	</tr>
-	<tr>
-		<td>Supplier<T></td>
-		<td>T get()</td>
-		<td>리턴 값만 있다.</td>
-	<tr>
+	
 	<tr>
 		<td>Consumer<T></td>
 		<td>void accept(T t)</td>
@@ -86,7 +87,7 @@ function() {
 	<tr>
 </table>
 
-.
+-----
 
 ### 두개의 매개변수를 받는 함수형 인터페이스
 
@@ -109,7 +110,7 @@ function() {
 	<tr>	
 </table>
 
-.
+-----
 
 ## 예제
 
@@ -142,8 +143,6 @@ String temp = s2.get();
 ```
 
 
-
-
 ## Predicate 인페페이스 활용
 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html">
 Predicate 레퍼런스 문서
@@ -174,7 +173,7 @@ Predicate 레퍼런스 문서
 	<tr>
 </table>
 
-.
+-----
 
 ```java
 Predicate<Integer> p = i -> i < 10;
