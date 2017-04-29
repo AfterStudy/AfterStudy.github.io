@@ -2,9 +2,12 @@
 layout: post
 title: 함수형 인터페이스
 ---
+
+
 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html">
 함수형 인터페이스 레퍼런스 문서
 </a>
+
 
 ## 함수형 인터페이스란?
 
@@ -40,6 +43,7 @@ function() {
 
 ### 매개변수가 없는 함수형 인터페이스
 
+
 <table>
 	<tr>
 		<th>인터페이스</th>
@@ -60,6 +64,7 @@ function() {
 
 
 ### 하나의 매개변수를 가지는 함수형 인터페이스
+
 
 <table>
 	<tr>
@@ -88,6 +93,7 @@ function() {
 
 ### 두개의 매개변수를 받는 함수형 인터페이스
 
+
 <table>
 	<tr>
 		<th>인터페이스</th>
@@ -106,6 +112,7 @@ function() {
 		<td>boolean test(T t, R r)</td>
 	</tr>	
 </table>
+
 
 ## 예제
 
@@ -136,7 +143,10 @@ Supplier<String> s2 = new Supplier<String>() {
 
 String temp = s2.get();
 ```
+
+
 -----
+
 
 ## Predicate 인페페이스 활용
 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html">
@@ -144,6 +154,7 @@ Predicate 레퍼런스 문서
 </a>
 
 ### 메서드 정리
+
 
 <table>
 	<tr>
@@ -168,7 +179,9 @@ Predicate 레퍼런스 문서
 	</tr>
 </table>
 
+
 -----
+
 
 ```java
 Predicate<Integer> p = i -> i < 10;
